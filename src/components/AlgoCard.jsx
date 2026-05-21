@@ -24,9 +24,9 @@ export default function AlgoCard({
   }
 
   return (
-    <motion.div
-      onClick={() => navigate(link)}
-      className="group cursor-pointer w-full rounded-2xl p-6 bg-neutral-900/60 backdrop-blur-md border border-neutral-800/80 hover:-translate-y-1.5 hover:border-neutral-700 hover:shadow-[0_10px_30px_-10px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out"
+    <motion.button
+     onClick={() => navigate(link)}
+      className="group w-full rounded-2xl p-6 bg-neutral-900/60 backdrop-blur-md border border-neutral-800/80 hover:-translate-y-1.5 hover:border-neutral-700 hover:shadow-[0_10px_30px_-10px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out text-left"
       variants={cardVariants}
       whileHover={{ y: -5 }}
     >
@@ -59,6 +59,6 @@ export default function AlgoCard({
 
         <ArrowRight className="w-5 h-5 text-cyan-400 transition-transform duration-300 group-hover:translate-x-1.5" />
       </div>
-    </motion.div>
+    </motion.button>
   )
 }
