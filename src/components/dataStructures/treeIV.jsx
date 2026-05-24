@@ -232,12 +232,12 @@ export default function TreeIV() {
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Val"
             className="bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-white outline-none focus:border-cyan-500 transition-colors w-24"
-           onKeyDown={(e) => {
-    if (e.key === 'Enter') {
-        e.preventDefault()
-        handleInsert()
-    }
-}}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault()
+                handleInsert()
+              }
+            }}
             disabled={isTraversing}
           />
           <button
