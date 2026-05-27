@@ -25,7 +25,9 @@ export default function StackIV({ onStepChange }) {
 
   const stackRef = useRef([])
   const hasStackSize = stackCapacity !== null
-  const emptySlots = hasStackSize ? Math.max(stackCapacity - stack.length, 0) : 0
+  const emptySlots = hasStackSize
+    ? Math.max(stackCapacity - stack.length, 0)
+    : 0
   const isStackFull = hasStackSize && stack.length >= stackCapacity
   const isStackLocked = hasStackStarted
 
@@ -75,9 +77,7 @@ export default function StackIV({ onStepChange }) {
     }
 
     setStackCapacity(nextCapacity)
-    setConsoleOutput(
-      `Stack size set to ${nextCapacity}. Start pushing values.`
-    )
+    setConsoleOutput(`Stack size set to ${nextCapacity}. Start pushing values.`)
   }
 
   const runAnimation = (el, params) => {
@@ -430,7 +430,9 @@ export default function StackIV({ onStepChange }) {
   return (
     <div className="flex flex-col h-full items-center">
       <div className="mb-6 w-full max-w-2xl flex lg:flex-row flex-col items-center justify-between bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-        <label className="text-slate-300 font-bold mr-4">Application Mode:</label>
+        <label className="text-slate-300 font-bold mr-4">
+          Application Mode:
+        </label>
         <select
           value={mode}
           onChange={(e) => handleModeChange(e.target.value)}
@@ -478,7 +480,9 @@ export default function StackIV({ onStepChange }) {
               : 'bg-cyan-950/40 border-cyan-700/50 text-cyan-300'
           }`}
         >
-          {hasStackSize ? `${stack.length}/${stackCapacity} used` : 'size not set'}
+          {hasStackSize
+            ? `${stack.length}/${stackCapacity} used`
+            : 'size not set'}
         </div>
       </div>
 
