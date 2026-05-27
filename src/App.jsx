@@ -210,7 +210,7 @@ function App() {
       element: (
         <Suspense fallback={<PageLoader />}>
           <AppLayout>
-            <DPVisualizerPage  />
+            <DPVisualizerPage />
           </AppLayout>
         </Suspense>
       ),
