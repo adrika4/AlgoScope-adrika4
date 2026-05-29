@@ -19,17 +19,22 @@ export default function AlgoCard({ title, description, link, color }) {
     })
   }
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
-      },
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
     },
+  },
+  hover: { 
+    scale: 1.02, 
+    y: -8,
+    transition: { duration: 0.2 }
   }
+}
 
   const colorClasses =
     color || 'theme-card theme-border hover:border-neutral-700'
@@ -44,7 +49,7 @@ export default function AlgoCard({ title, description, link, color }) {
       onMouseLeave={() => setIsHovering(false)}
       className={`group relative block w-full rounded-3xl p-8 backdrop-blur-2xl transition-all duration-500 ease-out text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/50 overflow-hidden ${colorClasses} border hover:-translate-y-2 hover:shadow-2xl`}
       variants={cardVariants}
-      whileHover={{ scale: 1.02 }}
+      whileHover="hover"
       whileTap={{ scale: 0.98 }}
     >
       {/* Dynamic Mouse Spotlight Background */}
