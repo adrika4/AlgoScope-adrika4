@@ -33,9 +33,9 @@ Experience AlgoScope in your browser: **[algo-scope-virid.vercel.app](https://al
 
 - [Project Purpose](#-project-purpose)
 - [Features](#-features)
-- [Tech Stack](#️-tech-stack)
-- [Quick Start](#-quick-start)
-- [Architecture](#️-architecture)
+- [Tech Stack](`#-tech-stack`)
+- [Quick Start](`#-quick-start`)
+- [Architecture](`#-architecture`)
 - [Star History](#star-history)
 - [Contributing](#-contributing)
 - [Contributors](#-contributors)
