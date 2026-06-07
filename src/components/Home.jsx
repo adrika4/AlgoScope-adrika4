@@ -138,13 +138,15 @@ const OPERATING_SYSTEMS = [
 export const Home = () => {
   const [filter, setFilter] = useState('All')
 
-  const filteredAlgos = filter === 'All'
-    ? ALGORITHMS
-    : ALGORITHMS.filter((algo) => algo.difficulty === filter)
+  const filteredAlgos =
+    filter === 'All'
+      ? ALGORITHMS
+      : ALGORITHMS.filter((algo) => algo.difficulty === filter)
 
-  const filteredOS = filter === 'All'
-    ? OPERATING_SYSTEMS
-    : OPERATING_SYSTEMS.filter((os) => os.difficulty === filter)
+  const filteredOS =
+    filter === 'All'
+      ? OPERATING_SYSTEMS
+      : OPERATING_SYSTEMS.filter((os) => os.difficulty === filter)
 
   return (
     <div className="theme-home relative min-h-screen w-full overflow-x-hidden selection:bg-cyan-500/30">
@@ -152,7 +154,6 @@ export const Home = () => {
 
       <div className="relative z-10 px-4 pb-16">
         <div id="explore" className="mx-auto w-full max-w-7xl px-4">
-          
           {/* Difficulty Filter Tabs */}
           <div className="flex justify-center mb-12">
             <div
@@ -177,7 +178,11 @@ export const Home = () => {
                         background: 'rgba(6,182,212,0.2)',
                         border: '1px solid rgba(6,182,212,0.4)',
                       }}
-                      transition={{ type: 'spring', bounce: 0.2, duration: 0.4 }}
+                      transition={{
+                        type: 'spring',
+                        bounce: 0.2,
+                        duration: 0.4,
+                      }}
                     />
                   )}
                   <span className="relative">{level}</span>

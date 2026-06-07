@@ -10,23 +10,43 @@ export const ROUTE_DIFFICULTIES = {
   '/string-algorithms': 'Advanced',
   '/dynamic-programming': 'Advanced',
   '/dp-journey': 'Advanced',
-  '/backtracking': 'Advanced'
-};
+  '/backtracking': 'Advanced',
+}
 
 export const NEXT_TOPICS_MAP = {
-  'Beginner': [
+  Beginner: [
     { name: 'Graph Algorithms', href: '/spath', difficulty: 'Intermediate' },
-    { name: "Moore's Voting", href: '/moore-voting', difficulty: 'Intermediate' },
-    { name: 'Abstract Data Types', href: '/adt', difficulty: 'Intermediate' }
+    {
+      name: "Moore's Voting",
+      href: '/moore-voting',
+      difficulty: 'Intermediate',
+    },
+    { name: 'Abstract Data Types', href: '/adt', difficulty: 'Intermediate' },
   ],
-  'Intermediate': [
-    { name: 'String Algorithms', href: '/string-algorithms', difficulty: 'Advanced' },
-    { name: 'Dynamic Programming', href: '/dynamic-programming', difficulty: 'Advanced' },
-    { name: 'Backtracking', href: '/backtracking', difficulty: 'Advanced' }
+  Intermediate: [
+    {
+      name: 'String Algorithms',
+      href: '/string-algorithms',
+      difficulty: 'Advanced',
+    },
+    {
+      name: 'Dynamic Programming',
+      href: '/dynamic-programming',
+      difficulty: 'Advanced',
+    },
+    { name: 'Backtracking', href: '/backtracking', difficulty: 'Advanced' },
   ],
-  'Advanced': [
-    { name: 'DP Optimization Journey', href: '/dp-journey', difficulty: 'Advanced' },
+  Advanced: [
+    {
+      name: 'DP Optimization Journey',
+      href: '/dp-journey',
+      difficulty: 'Advanced',
+    },
     { name: 'Practice Sandbox', href: '/practice', difficulty: 'Intermediate' },
-    { name: 'Guess the Algorithm', href: '/challenge', difficulty: 'Intermediate' }
-  ]
-};
+    {
+      name: 'Guess the Algorithm',
+      href: '/challenge',
+      difficulty: 'Intermediate',
+    },
+  ],
+}
