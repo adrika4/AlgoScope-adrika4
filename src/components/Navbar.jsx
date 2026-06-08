@@ -132,7 +132,7 @@ const algorithmLinks = [
   },
   {
     name: 'Sliding Window',
-    href: '/dp-journey',
+    href: '/sliding-window',
     difficulty: 'Advanced',
   },
 ]

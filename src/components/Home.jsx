@@ -111,7 +111,7 @@ const ALGORITHMS = [
   {
     title: 'Sliding Window',
     description:
-      'Visualise the sliding window algorithm use to optimally solve problems on substrings and subarrays.',
+      'Visualize the sliding window algorithm use to optimally solve problems on substrings and subarrays.',
     color: 'theme-card border-rose-500/30 hover:border-rose-400',
     link: '/sliding-window',
     difficulty: 'Advanced',
