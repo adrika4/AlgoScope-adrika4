@@ -509,10 +509,9 @@ const ARRAYS = {
    ARRAY VISUALIZATION
    ═══════════════════════════════════════════ */
 function ArrayViz({ step, pk }) {
-  const accent = PROBLEMS[pk].accent
 
   if (pk === 'twoSum') {
-    const { arr, L, R, status, found } = step
+    const { arr, L, R, found } = step
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         <div
@@ -659,7 +658,6 @@ function ArrayViz({ step, pk }) {
               const y = svgH - barH - 20
               const isL = i === L,
                 isR = i === R
-              const inWindow = i >= L && i <= R
               const isBest = bestPair && i >= bestPair[0] && i <= bestPair[1]
               let fill = 'rgba(255,255,255,0.06)'
               let stroke = 'rgba(255,255,255,0.08)'
@@ -1214,7 +1212,7 @@ export default function TwoPointerVisualizer() {
       default:
         return []
     }
-  }, [pk])
+  }, [pk, cfg])
 
   const total = allSteps.length
   const cur = allSteps[Math.min(step, total - 1)] || {}
