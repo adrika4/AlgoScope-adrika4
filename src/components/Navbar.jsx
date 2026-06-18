@@ -187,8 +187,8 @@ export const Navbar = () => {
   }, [history])
 
   const closeExploreMenu = useCallback(() => {
-  setExploreOpen(false)
-  setHoveredTab((current) => (current === 'explore' ? null : current))
+    setExploreOpen(false)
+    setHoveredTab((current) => (current === 'explore' ? null : current))
   }, [])
 
   const handleExploreKeyDown = (event) => {

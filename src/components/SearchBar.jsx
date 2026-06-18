@@ -412,10 +412,10 @@ const SearchBar = ({ onOpen }) => {
   }
 
   const openModal = React.useCallback(() => {
-  previousFocusRef.current = document.activeElement
-  setIsModalOpen(true)
-  onOpen?.()
-}, [onOpen])
+    previousFocusRef.current = document.activeElement
+    setIsModalOpen(true)
+    onOpen?.()
+  }, [onOpen])
 
   const handleCloseModal = React.useCallback(() => {
     setIsModalOpen(false)
