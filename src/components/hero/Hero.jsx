@@ -120,7 +120,6 @@ export function Hero() {
                 t={`${VISUALIZER_COUNT}+ visualizers`}
                 icon={<LayoutGrid className="size-3" />}
               />
-              
               <Meta t="Runs in browser" icon={<Globe className="size-3" />} />
               <Meta t="Open source" icon={<Code2 className="size-3" />} />
               <Meta t="Free to use" icon={<Unlock className="size-3" />} />
